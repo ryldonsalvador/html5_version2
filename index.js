@@ -63,8 +63,9 @@ window.onload = function(e){
 
   band_intro_anim.onComplete = function() {
     document.getElementById("band_intro_anim").style.opacity = '0';
+    logo_intro.setSpeed(2); 
     second_ribbon.play(); 
-    logo_intro.setSpeed(1); 
+    logo_intro.setSpeed(2); 
     logo_intro.play(); 
   }
 
