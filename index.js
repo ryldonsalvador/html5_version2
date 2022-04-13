@@ -63,18 +63,14 @@ window.onload = function(e){
 
   band_intro_anim.onComplete = function() {
     document.getElementById("band_intro_anim").style.opacity = '0';
-    logo_intro.setSpeed(2); 
+    second_ribbon.setSpeed(2); 
     second_ribbon.play(); 
     logo_intro.setSpeed(2); 
     logo_intro.play(); 
   }
 
-  logo_intro.onComplete = function() {
-    
-  }
 
   logo_intro.onEnterFrame = function () {
-    console.log(second_ribbon.currentFrame)
     if(second_ribbon.currentFrame >= 15){
       text_anim.play();
       small_logo_anim.play();
